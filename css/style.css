@@ -35,8 +35,9 @@ ul{
 *  LAYOUT  *
 ***********/
 
-.row{
+section .row{
 
+    margin-left: -1rem;
 }
 
 
@@ -47,6 +48,7 @@ ul{
 }
 
 .card{
+    padding: 1rem;
     
 
 }
@@ -120,6 +122,9 @@ main::before{
 *  SECTION  *
 ***********/
 
+main> section{
+    padding: 2rem 0;
+}
 
 
 
