@@ -21,6 +21,7 @@ ul{
 
  .bordered{
     border: 1px dashed red;
+    min-height: 50px;
  }
 
 .bg-yellow{
@@ -46,6 +47,7 @@ ul{
 }
 
 .card{
+    
 
 }
 
@@ -66,16 +68,17 @@ ul{
 ***********/
 
 #header{
-    display: fixed;
+    background-color: lghtblue;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
-#header::after{
-    content: "";
-    padding: 30px;
-}
+
 
 header .container{
-    line-height: 4rem;
+    line-height: 3rem;
 
 }
 
@@ -94,6 +97,18 @@ nav ul{
 header #icon{
     display:none;
 
+}
+
+
+
+/***********
+*  MAIN  *
+***********/
+
+main::before{
+    content: "";
+    padding-top: 3rem;
+    display: block;
 }
 
 
