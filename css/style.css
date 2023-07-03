@@ -193,6 +193,22 @@ section{
     #benefit .col{
         width: 50%;
     }
+
+
+    /* ABOUT-US SECTION */
+    #about-us .row{
+        display: flex;
+    }
+
+    #about-us .col:first-child {
+        width: 65%;
+    }
+
+    #about-us .col{
+        width: 35%;
+    }
+
+    
     
 }
 
@@ -237,6 +253,10 @@ section{
     #benefit .col{
         width: calc(100% / 3);
     }
+
+
+    /* ABOUT-US SECTION */
+
 
 }
 
