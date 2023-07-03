@@ -172,9 +172,27 @@ section{
     }
 
 
-    /* PLANING SECTION */
+    /* PLANING SECTION 
+    
+    //////
+    
+    */
 
 
+    /* BENEFIT SECTION */
+
+    #benefit .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #benefit .col:first-child{
+        width: 100%;
+    }
+
+    #benefit .col{
+        width: 50%;
+    }
     
 }
 
@@ -214,9 +232,11 @@ section{
     }
 
     
+    /* BENEFIT SECTION */
    
-   
-
+    #benefit .col{
+        width: calc(100% / 3);
+    }
 
 }
 
