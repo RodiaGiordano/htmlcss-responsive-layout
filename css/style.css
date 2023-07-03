@@ -114,7 +114,7 @@ header #icon{
 
 /* Header */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .col> ul{
         display:none;
     }
@@ -122,5 +122,5 @@ header #icon{
     header #icon{
         display: block;
     }
-    
 }
+
