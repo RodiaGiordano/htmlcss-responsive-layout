@@ -49,7 +49,7 @@ section .row{
 }
 
 .card{
-    padding: 2rem;
+    padding: 1rem;
     
 }
 
@@ -89,15 +89,16 @@ nav.row{
 }
 
 nav ul{
-    display: flex;
-    gap: 1rem;
+    display: none; 
     
 }
 
-header #icon{
-    display:none;
-
+nav li{
+    display: inline-block;
+    padding-left: 1rem;
 }
+
+
 
 
 
@@ -132,20 +133,22 @@ main> section{
 
 
 
+
 /**************
 *  RESPONSIVE  *     small <576 - medium <768 - large <992
 ***************/
 
 /* HEADER */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 992px) {
     .col> ul{
-        display:none;
-    }
-    
-    header #icon{
         display: block;
     }
+
+    #icon{
+        display:none;
+    }
+   
 }
 
 
@@ -154,7 +157,12 @@ main> section{
 
 /* DEMO SECTION */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+
+    #demo .col{
+        text-align: left;
+        
+    }
     
     
 }
