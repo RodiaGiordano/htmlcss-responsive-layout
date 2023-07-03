@@ -157,25 +157,25 @@ main> section{
               
     }
 
-    #demo .col{
-        width: calc(100% / 3);
-    }
-
     #demo .col-50 {
         text-align: left;
         width: calc(100% / 3 * 2);
     }
 
+    #demo .col{
+        width: calc(100% / 3);
+    }
+
+    
 }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 993px){
      .container{
         max-width: 1000px;
         
         
     }
 
-    
 
     #header ul{
         display: block;
