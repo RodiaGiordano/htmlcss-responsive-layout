@@ -65,6 +65,15 @@ ul{
 *  HEADER  *
 ***********/
 
+#header{
+    display: fixed;
+}
+
+#header::after{
+    content: "";
+    padding: 30px;
+}
+
 header .container{
     line-height: 4rem;
 
@@ -82,6 +91,11 @@ nav ul{
     
 }
 
+header #icon{
+    display:none;
+
+}
+
 
 
 
@@ -90,3 +104,23 @@ nav ul{
 /***********
 *  SECTION  *
 ***********/
+
+
+
+
+/**************
+*  RESPONSIVE  *     small <576 - medium <768 - large <992
+***************/
+
+/* Header */
+
+@media screen and (max-width: 576px) {
+    .col> ul{
+        display:none;
+    }
+    
+    header #icon{
+        display: block;
+    }
+    
+}
