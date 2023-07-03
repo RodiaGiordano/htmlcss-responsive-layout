@@ -248,19 +248,17 @@ footer{
 
     /* PLANING SECTION */
 
-    #planning .container{
+    #planning .row{
     display: flex;
-    align-content: baseline;
+    justify-content: center;
     
     }
 
-    #planning .container:last-child{
-        align-items: end;
+    #planning .col{
+        width: 25%;
     }
 
-    #planning .row{
-        padding: 0 50px;
-    }
+    
 
     
     /* BENEFIT SECTION */
