@@ -1,38 +1,92 @@
 /***********
- *  RESET  *
- ***********/
+*  RESET  *
+***********/
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+ul{
+    list-style-type: none;
+    
+}
 
 
 
-
- /***********
- *  DEBUG  *
- ***********/
+/***********
+*  DEBUG  *
+***********/
 
  .bordered{
     border: 1px dashed red;
  }
 
-
-
-
- 
-
- /***********
- *  LAYOUT  *
- ***********/
+.bg-yellow{
+    background-color: yellowgreen;
+}
 
 
 
 
+/***********
+*  LAYOUT  *
+***********/
+
+.row{
+
+}
 
 
-  /***********
- *  SECTION  *
- ***********/
+.container{
+    margin: auto;
+    padding: 0 2rem;
+
+}
+
+.card{
+
+}
+
+
+.col{
+    
+   
+
+}
+
+
+
+
+
+
+/***********
+*  HEADER  *
+***********/
+
+header .container{
+    line-height: 4rem;
+
+}
+
+nav.row{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+    
+}
+
+
+
+
+
+
+/***********
+*  SECTION  *
+***********/
