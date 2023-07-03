@@ -1,4 +1,4 @@
-/***********
+/**********
 *  RESET  *
 ***********/
 
@@ -15,7 +15,7 @@ ul{
 
 
 
-/***********
+/**********
 *  DEBUG  *
 ***********/
 
@@ -99,8 +99,8 @@ nav li{
 
 
 
-/***********
-*  MAIN  *
+/**********
+ *  MAIN  *
 ***********/
 
 main::before{
@@ -109,7 +109,7 @@ main::before{
     display: block;
 }
 
-section:nth-child(even){
+main section:nth-child(even){
     
         background-color: #9792E4;
     
@@ -125,9 +125,9 @@ section .row{
 
 
 
-/***********
-*  MAIN SECTION  *
-***********/
+/*************
+*MAIN SECTION*
+**************/
 
 section{
     padding: 2rem 0;
@@ -138,6 +138,21 @@ section{
 #demo .card{
     text-align: center;
 }
+
+
+
+
+/***********
+*  FOOTER  *
+************/
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+
+
 
 
 
