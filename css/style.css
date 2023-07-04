@@ -40,18 +40,30 @@ body{
 
 .container{
     margin: auto;
-    padding: 0 2rem;
-
+    padding: 0 3rem;
 }
+
+    .row{
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+
+.card{
+    padding: 3rem;
+    
+}
+
 
 main .col{
     padding: 1rem;
-}
-
-.card{
-    padding: 1rem;
     
 }
+
+
+
+
+
 
 
 
@@ -118,7 +130,7 @@ nav button{
 
 main::before{
     content: "";
-    padding-top: 2rem;
+    padding-top: 4rem;
     display: block;
 }
 
@@ -128,13 +140,6 @@ main section:nth-child(even){
     
 }
 
-
-
-section .row{
-
-    margin-left: -1rem;
-    margin-right: -1rem;
-}
 
 
 
@@ -149,7 +154,43 @@ section{
 /* DEMO SECTION */
 
 #demo .card{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #B5DDFF;
+    border-radius: 10px;
+}
+
+#demo .card:first-child{
+    padding-bottom: 0;
+}
+
+#demo .title{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-self: flex-start;
+
+    color: #0084FD;
+
+}
+
+#demo button{
+    display: block;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: #0084FD;
+    font-weight:600; 
+    
+}
+
+#demo img{
+    display: inline-block;
+    bottom: end;
+    width: 60%;
 }
 
 
