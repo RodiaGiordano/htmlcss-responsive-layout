@@ -65,14 +65,6 @@ main .col{
 
 
 
-
-
-
-
-
-
-
-
 /***********
 *  HEADER  *
 ***********/
@@ -83,7 +75,7 @@ main .col{
     top: 0;
     right: 0;
     left: 0;
-    
+    z-index: 10;
 }
 
 
@@ -159,24 +151,29 @@ section{
     align-items: center;
     gap: 2rem;
     background-color: #B5DDFF;
-    border-radius: 10px;
-}
-
-#demo .card:first-child{
-    padding-bottom: 0;
+    border-radius: 25px;
+    text-align: center;
 }
 
 #demo .title{
-    display: inline-block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    align-self: flex-start;
-
     color: #0084FD;
-
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
-#demo button{
+
+#demo .col:first-child .card{
+    padding-bottom: 0;
+}
+
+#demo .col:first-child .title{
+    align-self: flex-start;
+}
+
+
+
+
+#demo .col:first-child button{
     display: block;
     color: white;
     padding: 10px 40px;
@@ -190,7 +187,12 @@ section{
 #demo img{
     display: inline-block;
     bottom: end;
-    width: 60%;
+    max-width: 60%;
+}
+
+#demo .fa-solid{
+    color: #0084FD; 
+    font-size: 100px;
 }
 
 
@@ -229,7 +231,8 @@ footer{
 
     #demo .row{
         display: flex; 
-        flex-wrap: wrap;   
+        flex-wrap: wrap;
+        
               
     }
 
