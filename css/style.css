@@ -239,16 +239,23 @@ section{
 #testimonials .card{
     background-color:#9792E4;
     color: white;
+    
+}
+
+#testimonials .box-content{
+    text-align: center;
 }
 
 #testimonials .title{
-    font-size: 1.5rem;
+    color: #9792E4;
+    font-size: 2rem;
     font-weight: bold;
     margin: 40px 0;
 }
 
 #testimonials p{
-    line-height:1.5rem;;
+    line-height:1.5rem;
+    font-size: small;
 }
 
 #testimonials .img-card{
@@ -329,15 +336,24 @@ footer{
     }
 
     
+    /* TESTIMONIALS SECTION */
 
-    
+    #testimonials .card{
+        flex-direction: row;
+        
+    }
+
+    #testimonials .img-card{
+        width: 400px;
+        align-self:flex-start;
+    }
 
 
-    /* PLANING SECTION 
-    
-    //////
-    
-    */
+    #testimonials .box-content> .title{
+        margin: 15px 0;
+    }
+
+   
 
 
     /* BENEFIT SECTION */
