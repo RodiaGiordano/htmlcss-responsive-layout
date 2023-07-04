@@ -40,7 +40,7 @@ body{
 
 .container{
     margin: auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 .row{
@@ -109,7 +109,7 @@ nav button{
     border-radius: 15px;
 }
 
-.fa-solid{
+.fa-solid, .fa-brands{
     font-size: x-large;
     vertical-align: middle;
 }
@@ -132,6 +132,11 @@ main section:nth-child(even){
     
 }
 
+.img-card> img{
+    max-width: 100%;
+    display: block; 
+}
+
 
 
 
@@ -145,7 +150,7 @@ section{
 
 /* DEMO SECTION */
 
-#demo .card{
+.card{
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -174,8 +179,6 @@ section{
 }
 
 
-
-
 #demo .col:first-child button{
     display: block;
     color: white;
@@ -187,20 +190,42 @@ section{
     
 }
 
-
-
-#demo .img-card> img{
-    max-width: 100%;
-    display: block;
-    
-    
-    
-}
-
 #demo .fa-solid{
     color: #0084FD; 
     font-size: 100px;
     
+}
+
+
+/* PLANNING SECTION */
+
+#planning .card{
+    background-color: white;
+      
+}
+
+#planning .col:first-child .title{
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    margin: 40px 0;
+}
+
+
+
+
+#planning .card> p{
+    font-style: italic;
+    line-height: 1.5rem;
+    
+}
+
+#planning button{
+    border-radius: 50%;
+    aspect-ratio: 1;
+    padding: 20px;
+    border: none;
+    background-color: #9792E4; 
 }
 
 
