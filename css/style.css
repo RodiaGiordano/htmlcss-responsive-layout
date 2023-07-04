@@ -204,8 +204,11 @@ section{
       
 }
 
-#planning .col:first-child .title{
+#planning .title{
     font-weight: bold;
+}
+
+#planning .col:first-child .title{
     font-size: 2rem;
     color: white;
     margin: 40px 0;
@@ -217,6 +220,7 @@ section{
 #planning .card> p{
     font-style: italic;
     line-height: 1.5rem;
+    font-size: small;
     
 }
 
@@ -368,23 +372,31 @@ footer{
     }
 
      
-      
-
-
-
     /* PLANING SECTION */
 
     #planning .row{
     display: flex;
     justify-content: center;
+    gap: 40px;
     
     }
 
     #planning .col{
-        width: 25%;
+        width: 40%;
+        align-self: end;
     }
 
     
+
+    
+
+    #planning .col:last-child img{
+        max-width: 50%;
+        margin: auto;
+
+    }
+
+   
 
     
     /* BENEFIT SECTION */
