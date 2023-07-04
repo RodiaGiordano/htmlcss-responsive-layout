@@ -43,14 +43,14 @@ body{
     padding: 0 1rem;
 }
 
-    .row{
-        margin-left: -1rem;
-        margin-right: -1rem;
-    }
+.row{
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
 
 
 .card{
-    padding: 1rem;
+    padding: 1.5rem;
     
 }
 
@@ -128,7 +128,7 @@ main::before{
 
 main section:nth-child(even){
     
-        background-color: #9792E4;
+    background-color: #9792E4;
     
 }
 
@@ -140,7 +140,7 @@ main section:nth-child(even){
 **************/
 
 section{
-    padding: 2rem 0;
+    padding: 2rem 0 5rem;
 }
 
 /* DEMO SECTION */
@@ -148,26 +148,29 @@ section{
 #demo .card{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: start;
     gap: 2rem;
     background-color: #B5DDFF;
     border-radius: 25px;
-    text-align: center;
+    text-align: center; 
+}
+
+#demo .col:first-child .card{
+    padding-bottom: 0;
 }
 
 #demo .title{
     color: #0084FD;
     font-weight: bold;
     font-size: 1.5rem;
+    
 }
 
-
-#demo .col:first-child .card{
-    padding-bottom: 0;
-}
-
-#demo .col:first-child .title{
-    align-self: flex-start;
+#demo .box-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
 
 
@@ -184,15 +187,20 @@ section{
     
 }
 
-#demo img{
-    display: inline-block;
-    bottom: end;
+
+
+#demo .img-card> img{
     max-width: 100%;
+    display: block;
+    
+    
+    
 }
 
 #demo .fa-solid{
     color: #0084FD; 
     font-size: 100px;
+    
 }
 
 
@@ -217,25 +225,29 @@ footer{
 *  RESPONSIVE  *     small <576 - medium <768 - large <992
 ***************/
 
-
-
-
 @media screen and (min-width: 577px) {
 
     .container{
         max-width: 768px;
-        
-    }
+    }    
 
      /* DEMO SECTION */
 
     #demo .row{
         display: flex; 
         flex-wrap: wrap;
-        
-              
+                 
     }
 
+    #demo .card{
+        height: 100%;
+    }
+
+
+    #demo .col{
+        width: calc(100% / 3);
+
+    }
 
     #demo .col:first-child{
         width: calc(100% / 3 * 2);
@@ -243,12 +255,12 @@ footer{
     }
 
    #demo .col:first-child> .card{
+        align-items: start;
         text-align: left;
+
     }
 
-    #demo .col{
-        width: calc(100% / 3);
-    }
+    
 
     
 
@@ -281,34 +293,58 @@ footer{
         display: flex;
     }
 
-    #about-us .col:first-child {
+    #about-us .col:first-child{
         width: 65%;
     }
 
     #about-us .col{
         width: 35%;
     }
+}
 
     
-    
-}
+    /* DESKTOP */
 
 @media screen and (min-width: 993px){
 
     .container{
-       max-width: 768px;
-       
-   }
-    /* DEMO SECTION */
+        max-width: 993px;
+    }
 
 
-    #header ul{
+   #header ul{
         display: block;
     }
 
     #icon{
         display:none;
-    } 
+    }
+
+    /* DEMO SECTION */
+
+   
+    #demo .col:first-child .card{
+
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
+
+    }
+       
+    #demo .box-content{
+        width: 60%;
+        align-items: start;
+    }
+
+    #demo .img-card{
+        width: 40%;
+        align-self: end;
+        
+    }
+
+     
+      
+
 
 
     /* PLANING SECTION */
