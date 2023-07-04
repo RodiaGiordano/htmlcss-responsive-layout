@@ -281,6 +281,46 @@ section{
 }
 
 
+/* BENEFIT */
+
+#benefit .row> .title{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#benefit .card> .title{
+    color: #9792E4;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#benefit .card> .title.number{
+    font-size: 4rem;
+}
+
+#benefit .card{
+    background-color: white;
+    text-align: left;
+}
+
+#benefit .card> p{
+    line-height: 2rem;
+}
+
+#benefit button{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: #9792E4;
+    align-self: flex-start;
+    color: white;
+    font-weight: bold;
+   
+}
+
+
 /***********
 *  FOOTER  *
 ************/
