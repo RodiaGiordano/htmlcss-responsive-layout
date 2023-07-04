@@ -43,7 +43,7 @@ ul{
 
 }
 
-main .col, .col-50{
+main .col{
     padding: 1rem;
 }
 
@@ -76,14 +76,11 @@ main .col, .col-50{
 
 header .container{
     line-height: 2rem;
-
-}
-
-nav.row{
     display: flex;
     justify-content: space-between;
 
 }
+
 
 nav ul{
     display: none; 
@@ -174,17 +171,21 @@ footer{
               
     }
 
-    #demo .col-50 {
+
+    #demo .col:first-child{
         width: calc(100% / 3 * 2);
+
+    }
+
+   #demo .col:first-child> .card{
+        text-align: left;
     }
 
     #demo .col{
         width: calc(100% / 3);
     }
 
-    #demo .col-50> .card{
-        text-align: left;
-    }
+    
 
 
     /* PLANING SECTION 
@@ -232,7 +233,7 @@ footer{
     /* DEMO SECTION */
 
      .container{
-        max-width: 1000px;
+        max-width: 993px;
         
         
     }
