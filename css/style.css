@@ -19,7 +19,7 @@ ul{
 *  DEBUG  *
 ***********/
 
- .bordered{
+.bordered{
     border: 1px dashed red;
     min-height: 50px;
  }
@@ -34,8 +34,9 @@ ul{
 /***********
 *  LAYOUT  *
 ***********/
-
-
+body{
+    font-family: 'Akatab', sans-serif;
+}
 
 .container{
     margin: auto;
@@ -65,34 +66,49 @@ main .col{
 ***********/
 
 #header{
-    background-color: lightblue;
+    background-color: #0084FD;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    
 }
 
 
 
 header .container{
-    line-height: 2rem;
+    line-height: 4rem;
     display: flex;
     justify-content: space-between;
+    color: white;
 
 }
 
+header .col{
+    display: flex;
+    align-items: center;
+}
 
 nav ul{
-    display: none; 
-    
+    display: none;     
 }
 
 nav li{
     display: inline-block;
-    padding-left: 1rem;
+    padding-left: 1rem; 
+    
 }
 
+nav button{
+    border: 0px white;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
 
+.fa-solid{
+    font-size: x-large;
+    vertical-align: middle;
+}
 
 
 
@@ -163,6 +179,11 @@ footer{
 
 @media screen and (min-width: 577px) {
 
+    .container{
+        max-width: 768px;
+        
+    }
+
      /* DEMO SECTION */
 
     #demo .row{
@@ -230,13 +251,12 @@ footer{
 
 @media screen and (min-width: 993px){
 
+    .container{
+       max-width: 768px;
+       
+   }
     /* DEMO SECTION */
 
-     .container{
-        max-width: 993px;
-        
-        
-    }
 
     #header ul{
         display: block;
