@@ -294,6 +294,7 @@ section{
     color: #9792E4;
     font-weight: bold;
     font-size: 2rem;
+    
 }
 
 #benefit .card> .title.number{
@@ -405,10 +406,12 @@ footer{
 
     #benefit .col:first-child{
         width: 100%;
+
     }
 
     #benefit .col{
         width: 50%;
+        height: 100%;
     }
 
 
